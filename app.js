@@ -60,7 +60,7 @@
     app.use('/clients', client);
 
     let port = 1234;
-    app.listen(port, () => {
+    app.listen(process.env.PORT || port, () => {
         console.log('Server is up and running on port number ' + port);
     });
 
