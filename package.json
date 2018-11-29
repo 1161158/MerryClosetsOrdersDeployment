@@ -1,0 +1,40 @@
+{
+  "name": "merryclosetsorders",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "array-length": "^0.1.2",
+    "async": "^2.6.1",
+    "await": "^0.2.6",
+    "body-parser": "^1.18.3",
+    "date-and-time": "^0.6.3",
+    "enum": "^2.5.0",
+    "enum-values": "^1.2.1",
+    "express": "^4.16.4",
+    "http": "0.0.0",
+    "json": "^9.0.6",
+    "json-parser": "^1.1.5",
+    "length": "0.0.1",
+    "mongoose": "^5.3.12",
+    "mongoose-double": "0.0.1",
+    "mongoose-unique-validator": "^2.0.2",
+    "node-fetch": "^2.3.0",
+    "node-rest-client": "^3.1.0",
+    "node-stringify": "^0.2.1",
+    "request": "^2.88.0",
+    "shortid": "^2.2.14",
+    "winston": "^3.1.0"
+  },
+  "test-unit": "NODE_ENV=test mocha '/**/*.spec.js'",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "supertest": "^3.3.0"
+  },
+  "description": ""
+}
