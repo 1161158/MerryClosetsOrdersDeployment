@@ -4,7 +4,7 @@ const StateEnum = require('../models/stateEnum.model');
 const Package = require('../models/package.model');
 const size_service = require('../services/size.service');
 const manufacture_service = require('../services/manufacture.service');
-const url = 'http://localhost:5000/api/';
+const url = 'http://merryclosetsproductmanager.azurewebsites.net/api/';
 const http = require('http');
 const client = require('../utils/http.client');
 

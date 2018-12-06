@@ -59,7 +59,7 @@
     app.use('/sizes', size);
     app.use('/clients', client);
 
-    let port = 1234;
+    let port = env.process.PORT || 1234;
     app.listen(port, () => {
         console.log('Server is up and running on port number ' + port);
     });
