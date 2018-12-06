@@ -11,10 +11,22 @@ function create(request){
                 depth: request.body.depth,
             }
         );
+        if(request.body.minWeight !== undefined){
+            size.minWeight = request.body.minWeight;
+            size.maxWeight = request.body.maxWeight;
+
+            if(size.minWeight > size.maxWeight){
+                resolve({
+                    boolean: false,
+                    type: 'weight invalid'
+                })
+            }
+        }
         size.save(function (err) {
             if (err) {
                 resolve({
                     boolean: false,
+                    type: 'error',
                     res: err
                 });
             }

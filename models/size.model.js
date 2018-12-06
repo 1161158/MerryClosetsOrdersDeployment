@@ -8,6 +8,8 @@ let SizeSchema = Schema(
         height: {type: Number, required: true},
         width: {type: Number, required: true},
         depth: {type: Number, required: true},
+        minWeight: {type: Number},
+        maxWeight: {type: Number,}
     }
 );
 

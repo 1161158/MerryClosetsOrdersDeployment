@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-const Object = Schema.Types.Object;
 
 const ClientSchema = Schema(
     {

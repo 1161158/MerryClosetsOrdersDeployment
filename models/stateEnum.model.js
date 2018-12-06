@@ -1,5 +1,4 @@
 var Enum = require('enum');
-const mongoose = require('mongoose');
 
 var StateEnum = new Enum({
     VALIDATING: 'Em Validação',
@@ -11,7 +10,7 @@ var StateEnum = new Enum({
     DELIVERED: 'Entregue',
 });
 
-function validate_state_to_update(state) {
+function validate_state(state) {
     return new Promise(async function (resolve) {
         switch (state) {
             case StateEnum.VALIDATING.value:
@@ -50,6 +49,6 @@ function is_ready_to_ship(state) {
 }
 
 module.exports = StateEnum;
-module.exports.validate_state_to_update = validate_state_to_update;
+module.exports.validate_state = validate_state;
 module.exports.is_produced = is_produced;
 module.exports.is_ready_to_ship = is_ready_to_ship;

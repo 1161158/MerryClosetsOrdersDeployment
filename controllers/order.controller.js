@@ -4,6 +4,7 @@ const loggerEvent = require('../utils/logging.events');
 const service = require('../services/order.service');
 
 const NO_SIZE = 'Tamanho não existe.';
+const WEIGHT_NOT_VALID = 'Peso não é válido.';
 const NO_ORDER = 'Encomenda não existe.';
 const NO_MANUFACTURE = 'Fábrica não existe.';
 const NO_PRODUCTS = 'Não foram especificados produtos.';
@@ -46,10 +47,9 @@ exports.get_order = async function (request, response) {
     let result = await service.get_order(request);
     if (result.boolean === false) {
         if (result.type === 'error') {
-        }
         logger.logError(loggerEvent.GetItemBadRequest.value, 'Getting Order Failed: ', result.res.message);
         return response.status(400).send(Json.json_to_string(result.res, response));
-
+        }
         if (result.type === 'no order') {
             logger.logWarning(loggerEvent.GetItemNotFound.value, 'Getting Order Failed: Reference of order =>', 'There are no Orders with the given reference');
             return response.status(404).send(Json.json_to_string(NO_ORDER, response));
@@ -76,9 +76,9 @@ exports.get_current_state= async function(request, response){
     let exists = await service.get_order(request);
     if (exists.boolean === false) {
         if (exists.type === 'error') {
-        }
         logger.logError(loggerEvent.GetItemBadRequest.value, 'Getting Order Failed: ', exists.res.message);
         return response.status(400).send(Json.json_to_string(exists.res, response));
+        }
 
         if (exists.type === 'no order') {
             logger.logWarning(loggerEvent.GetItemNotFound.value, 'Getting Order Failed: Reference of order =>', 'There are no Orders with the given reference');
@@ -123,12 +123,11 @@ exports.all_orders_by_client = async function (request, response) {
         orderJson = {
             orderRef: result.res[i].orderRef,
             orderState: stateJson.state,
-            packages: result.res[i].packages,
         };
         ordersJson.push(orderJson);
     }
     logger.logInformation(loggerEvent.GetAllOk.value, 'Getting All Manufactures Succeeded: ', '');
-    return response.status(200).send(orderJson);
+    return response.status(200).send(ordersJson);
 };
 
 exports.all_orders = async function (request, response) {
@@ -177,7 +176,7 @@ exports.update_state = async function (request, response) {
             return response.status(400).send(Json.json_to_string(result.res, response));
         }
     }
-    logger.logInformation(loggerEvent.UpdateOk.value, 'Updating State of Order Succeeded: ', result.res.orderState[result.res.orderState.length-1]);
+    logger.logInformation(loggerEvent.UpdateOk.value, 'Updating State of Order Succeeded: ', request.params.orderRef);
     return response.status(204).send();
 };
 
@@ -207,6 +206,10 @@ exports.add_packages = async function (request, response){
         if(result.type === 'no size'){
             logger.logWarning(loggerEvent.GetItemNotFound.value, 'Getting Size Failed: Reference of size =>', 'There are no Sizes with the given reference');
             return response.status(404).send(Json.json_to_string(NO_SIZE, response));
+        }
+        if(result.type === 'weight invalid'){
+            logger.logWarning(loggerEvent.GetItemNotFound.value, 'Adding Packages failed: Json not valid =>', 'Weight in not between the min and max of packages available');
+            return response.status(404).send(Json.json_to_string(WEIGHT_NOT_VALID, response));
         }
         if(result.type === 'no order'){
             logger.logWarning(loggerEvent.GetItemNotFound.value, 'Getting Order Failed: Reference of order =>', 'There are no Orders with the given reference');

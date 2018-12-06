@@ -4864,3 +4864,695 @@
 [28-November-2018 17:32:41.140 INFO]:      EVENTID: 1001     MESSAGE: Getting Best Manufacture By Reference:  undefined
 [28-November-2018 17:36:35.133 INFO]:      EVENTID: 1001     MESSAGE: Getting Best Manufacture By Reference:  undefined
 [28-November-2018 17:37:32.841 INFO]:      EVENTID: 1001     MESSAGE: Getting Best Manufacture By Reference:  undefined
+[29-November-2018 11:28:36.629 INFO]:      EVENTID: 1003     MESSAGE: Creating Size By Json:  
+[29-November-2018 11:28:36.793 INFO]:      EVENTID: 2011     MESSAGE: Creating Size Succeeded:  size1
+[29-November-2018 11:28:36.793 INFO]:      EVENTID: 1003     MESSAGE: Creating PackageSize in Logistic:  size1
+[29-November-2018 11:28:36.794 INFO]:      EVENTID: 2011     MESSAGE: Creating PackageSize Succeeded:  size1
+[29-November-2018 11:29:03.934 INFO]:      EVENTID: 1003     MESSAGE: Creating Size By Json:  
+[29-November-2018 11:29:04.199 INFO]:      EVENTID: 2011     MESSAGE: Creating Size Succeeded:  size2
+[29-November-2018 11:29:04.199 INFO]:      EVENTID: 1003     MESSAGE: Creating PackageSize in Logistic:  size2
+[29-November-2018 11:29:04.199 INFO]:      EVENTID: 2011     MESSAGE: Creating PackageSize Succeeded:  size2
+[29-November-2018 11:29:23.370 INFO]:      EVENTID: 1003     MESSAGE: Creating Size By Json:  
+[29-November-2018 11:29:23.540 INFO]:      EVENTID: 2011     MESSAGE: Creating Size Succeeded:  size3
+[29-November-2018 11:29:23.540 INFO]:      EVENTID: 1003     MESSAGE: Creating PackageSize in Logistic:  size3
+[29-November-2018 11:29:23.540 INFO]:      EVENTID: 2011     MESSAGE: Creating PackageSize Succeeded:  size3
+[29-November-2018 11:32:58.841 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 11:32:59.339 INFO]:      EVENTID: 2011     MESSAGE: Creating Order Succeeded:  4
+[29-November-2018 11:33:13.444 INFO]:      EVENTID: 1004     MESSAGE: Updating State of Order 4
+[29-November-2018 11:33:13.811 INFO]:      EVENTID: 2004     MESSAGE: Updating State of Order Succeeded:  { _id: 5bffce7998e6a14be0566035,
+  state: 'Produzida',
+  date: '29/11/2018 11:33:13' }
+[29-November-2018 11:33:27.367 INFO]:      EVENTID: 1004     MESSAGE: Add Packages of Order 4
+[29-November-2018 11:33:27.891 INFO]:      EVENTID: 2004     MESSAGE: Updating State of Order Succeeded:  4
+[29-November-2018 11:33:39.296 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  4
+[29-November-2018 11:33:39.416 INFO]:      EVENTID: 2001     MESSAGE: Getting Order Succeeded:  4
+[29-November-2018 11:33:44.809 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  4
+[29-November-2018 11:33:45.084 INFO]:      EVENTID: 2001     MESSAGE: Getting Order Succeeded:  4
+[29-November-2018 11:37:03.813 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 11:37:04.389 INFO]:      EVENTID: 2011     MESSAGE: Creating Order Succeeded:  5
+[29-November-2018 11:37:05.561 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 11:37:06.366 ERROR]:      EVENTID: 4003     MESSAGE: Creating Order Failed: JSON is not valid =>  E11000 duplicate key error index: mcorderdatabase.orders.$packages.tag_1 dup key: { : null }
+[29-November-2018 11:42:01.620 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 11:42:02.017 ERROR]:      EVENTID: 4003     MESSAGE: Creating Order Failed: JSON is not valid =>  E11000 duplicate key error index: mcorderdatabase.orders.$packages.tag_1 dup key: { : null }
+[29-November-2018 11:42:40.859 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 11:42:41.404 INFO]:      EVENTID: 2011     MESSAGE: Creating Order Succeeded:  5
+[29-November-2018 11:42:42.738 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 11:42:43.263 ERROR]:      EVENTID: 4003     MESSAGE: Creating Order Failed: JSON is not valid =>  E11000 duplicate key error index: mcorderdatabase.orders.$packages.tag_1 dup key: { : null }
+[29-November-2018 11:43:52.775 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 11:43:53.179 INFO]:      EVENTID: 2011     MESSAGE: Creating Order Succeeded:  5
+[29-November-2018 11:43:53.875 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 11:43:54.382 ERROR]:      EVENTID: 4003     MESSAGE: Creating Order Failed: JSON is not valid =>  E11000 duplicate key error index: mcorderdatabase.orders.$packages.tag_1 dup key: { : null }
+[29-November-2018 11:44:14.896 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 11:44:15.330 ERROR]:      EVENTID: 4003     MESSAGE: Creating Order Failed: JSON is not valid =>  E11000 duplicate key error index: mcorderdatabase.orders.$packages.tag_1 dup key: { : null }
+[29-November-2018 11:47:36.416 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 11:47:36.812 ERROR]:      EVENTID: 4003     MESSAGE: Creating Order Failed: JSON is not valid =>  E11000 duplicate key error index: mcorderdatabase.orders.$packages.tag_1 dup key: { : null }
+[29-November-2018 11:47:37.981 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 11:47:38.631 ERROR]:      EVENTID: 4003     MESSAGE: Creating Order Failed: JSON is not valid =>  E11000 duplicate key error index: mcorderdatabase.orders.$packages.tag_1 dup key: { : null }
+[29-November-2018 11:49:01.869 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 11:49:02.082 INFO]:      EVENTID: 2011     MESSAGE: Creating Order Succeeded:  1
+[29-November-2018 11:49:03.365 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 11:49:03.516 ERROR]:      EVENTID: 4003     MESSAGE: Creating Order Failed: JSON is not valid =>  E11000 duplicate key error index: mcorderdatabase.orders.$packages.tag_1 dup key: { : null }
+[29-November-2018 11:52:08.208 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 11:52:08.467 ERROR]:      EVENTID: 4003     MESSAGE: Creating Order Failed: JSON is not valid =>  E11000 duplicate key error index: mcorderdatabase.orders.$packages.tag_1 dup key: { : null }
+[29-November-2018 11:53:40.870 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 11:53:41.172 INFO]:      EVENTID: 2011     MESSAGE: Creating Order Succeeded:  1
+[29-November-2018 11:53:41.928 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 11:53:42.121 ERROR]:      EVENTID: 4003     MESSAGE: Creating Order Failed: JSON is not valid =>  E11000 duplicate key error index: mcorderdatabase.orders.$packages.tag_1 dup key: { : null }
+[29-November-2018 11:54:30.947 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 11:54:31.160 INFO]:      EVENTID: 2011     MESSAGE: Creating Order Succeeded:  1
+[29-November-2018 11:54:33.694 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 11:54:33.848 ERROR]:      EVENTID: 4003     MESSAGE: Creating Order Failed: JSON is not valid =>  E11000 duplicate key error index: mcorderdatabase.orders.$packages.tag_1 dup key: { : null }
+[29-November-2018 11:55:49.367 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 11:55:49.592 INFO]:      EVENTID: 2011     MESSAGE: Creating Order Succeeded:  1
+[29-November-2018 11:55:51.247 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 11:55:51.400 ERROR]:      EVENTID: 4003     MESSAGE: Creating Order Failed: JSON is not valid =>  E11000 duplicate key error index: mcorderdatabase.orders.$packages.tag_1 dup key: { : null }
+[29-November-2018 11:57:55.810 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 11:57:56.256 ERROR]:      EVENTID: 4003     MESSAGE: Creating Order Failed: JSON is not valid =>  E11000 duplicate key error index: mcorderdatabase.orders.$packages.tag_1 dup key: { : null }
+[29-November-2018 12:05:03.761 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 12:05:03.913 ERROR]:      EVENTID: 4003     MESSAGE: Creating Order Failed: JSON is not valid =>  E11000 duplicate key error index: mcorderdatabase.orders.$packages.tag_1 dup key: { : null }
+[29-November-2018 12:05:04.702 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 12:05:04.846 ERROR]:      EVENTID: 4003     MESSAGE: Creating Order Failed: JSON is not valid =>  E11000 duplicate key error index: mcorderdatabase.orders.$packages.tag_1 dup key: { : null }
+[29-November-2018 12:05:05.107 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 12:05:05.313 ERROR]:      EVENTID: 4003     MESSAGE: Creating Order Failed: JSON is not valid =>  E11000 duplicate key error index: mcorderdatabase.orders.$packages.tag_1 dup key: { : null }
+[29-November-2018 12:05:05.635 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 12:05:05.821 ERROR]:      EVENTID: 4003     MESSAGE: Creating Order Failed: JSON is not valid =>  E11000 duplicate key error index: mcorderdatabase.orders.$packages.tag_1 dup key: { : null }
+[29-November-2018 12:11:20.963 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 12:11:21.125 ERROR]:      EVENTID: 4003     MESSAGE: Creating Order Failed: JSON is not valid =>  E11000 duplicate key error index: mcorderdatabase.orders.$packages.tag_1 dup key: { : null }
+[29-November-2018 12:17:51.575 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 12:17:51.733 ERROR]:      EVENTID: 4003     MESSAGE: Creating Order Failed: JSON is not valid =>  E11000 duplicate key error index: mcorderdatabase.orders.$packages.tag_1 dup key: { : null }
+[29-November-2018 12:18:27.313 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 12:18:27.738 ERROR]:      EVENTID: 4003     MESSAGE: Creating Order Failed: JSON is not valid =>  E11000 duplicate key error index: mcorderdatabase.orders.$packages.tag_1 dup key: { : null }
+[29-November-2018 12:37:43.666 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 12:37:43.837 ERROR]:      EVENTID: 4003     MESSAGE: Creating Order Failed: JSON is not valid =>  E11000 duplicate key error index: mcorderdatabase.orders.$packages.tag_1 dup key: { : null }
+[29-November-2018 12:40:29.666 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 12:40:29.885 INFO]:      EVENTID: 2011     MESSAGE: Creating Order Succeeded:  1
+[29-November-2018 12:40:56.749 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 12:40:56.884 ERROR]:      EVENTID: 4003     MESSAGE: Creating Order Failed: JSON is not valid =>  E11000 duplicate key error index: mcorderdatabase.orders.$packages.tag_1 dup key: { : null }
+[29-November-2018 12:42:18.279 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 12:42:18.492 INFO]:      EVENTID: 2011     MESSAGE: Creating Order Succeeded:  1
+[29-November-2018 12:42:23.588 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 12:42:23.727 ERROR]:      EVENTID: 4003     MESSAGE: Creating Order Failed: JSON is not valid =>  E11000 duplicate key error index: mcorderdatabase.orders.$packages.tag_1 dup key: { : null }
+[29-November-2018 12:43:43.258 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 12:43:43.422 ERROR]:      EVENTID: 4003     MESSAGE: Creating Order Failed: JSON is not valid =>  E11000 duplicate key error index: mcorderdatabase.orders.$packages.tag_1 dup key: { : null }
+[29-November-2018 12:44:00.923 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 12:44:01.112 ERROR]:      EVENTID: 4003     MESSAGE: Creating Order Failed: JSON is not valid =>  E11000 duplicate key error index: mcorderdatabase.orders.$packages.tag_1 dup key: { : null }
+[29-November-2018 12:45:42.499 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 12:45:42.706 INFO]:      EVENTID: 2011     MESSAGE: Creating Order Succeeded:  1
+[29-November-2018 12:45:49.039 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 12:45:49.184 ERROR]:      EVENTID: 4003     MESSAGE: Creating Order Failed: JSON is not valid =>  E11000 duplicate key error index: mcorderdatabase.orders.$packages.tag_1 dup key: { : null }
+[29-November-2018 12:49:13.999 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 12:49:14.202 INFO]:      EVENTID: 2011     MESSAGE: Creating Order Succeeded:  1
+[29-November-2018 12:49:16.143 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 12:49:16.337 ERROR]:      EVENTID: 4003     MESSAGE: Creating Order Failed: JSON is not valid =>  E11000 duplicate key error index: mcorderdatabase.orders.$packages.tag_1 dup key: { : null }
+[29-November-2018 12:59:36.990 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 12:59:37.198 INFO]:      EVENTID: 2011     MESSAGE: Creating Order Succeeded:  1
+[29-November-2018 12:59:39.789 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 12:59:40.255 INFO]:      EVENTID: 2011     MESSAGE: Creating Order Succeeded:  2
+[29-November-2018 13:00:13.665 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 13:00:13.882 INFO]:      EVENTID: 2011     MESSAGE: Creating Order Succeeded:  3
+[29-November-2018 13:00:14.987 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 13:00:15.301 INFO]:      EVENTID: 2011     MESSAGE: Creating Order Succeeded:  4
+[29-November-2018 13:01:54.323 INFO]:      EVENTID: 1004     MESSAGE: Updating State of Order 1
+[29-November-2018 13:01:54.495 INFO]:      EVENTID: 2004     MESSAGE: Updating State of Order Succeeded:  { _id: 5bffe3429c23ec19c0e75433,
+  state: 'Produzida',
+  date: '29/11/2018 13:01:54' }
+[29-November-2018 13:02:24.112 INFO]:      EVENTID: 1003     MESSAGE: Creating Size By Json:  
+[29-November-2018 13:02:24.263 INFO]:      EVENTID: 2011     MESSAGE: Creating Size Succeeded:  size1
+[29-November-2018 13:02:24.263 INFO]:      EVENTID: 1003     MESSAGE: Creating PackageSize in Logistic:  size1
+[29-November-2018 13:02:24.263 INFO]:      EVENTID: 2011     MESSAGE: Creating PackageSize Succeeded:  size1
+[29-November-2018 13:02:49.145 INFO]:      EVENTID: 1003     MESSAGE: Creating Size By Json:  
+[29-November-2018 13:02:49.296 INFO]:      EVENTID: 2011     MESSAGE: Creating Size Succeeded:  size2
+[29-November-2018 13:02:49.296 INFO]:      EVENTID: 1003     MESSAGE: Creating PackageSize in Logistic:  size2
+[29-November-2018 13:02:49.297 INFO]:      EVENTID: 2011     MESSAGE: Creating PackageSize Succeeded:  size2
+[29-November-2018 13:02:59.648 INFO]:      EVENTID: 1003     MESSAGE: Creating Size By Json:  
+[29-November-2018 13:02:59.795 INFO]:      EVENTID: 2011     MESSAGE: Creating Size Succeeded:  size3
+[29-November-2018 13:02:59.795 INFO]:      EVENTID: 1003     MESSAGE: Creating PackageSize in Logistic:  size3
+[29-November-2018 13:02:59.796 INFO]:      EVENTID: 2011     MESSAGE: Creating PackageSize Succeeded:  size3
+[29-November-2018 13:03:04.881 INFO]:      EVENTID: 1004     MESSAGE: Add Packages of Order 1
+[29-November-2018 13:03:05.203 INFO]:      EVENTID: 2004     MESSAGE: Updating State of Order Succeeded:  1
+[29-November-2018 13:03:13.365 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  1
+[29-November-2018 13:03:13.547 INFO]:      EVENTID: 2001     MESSAGE: Getting Order Succeeded:  1
+[29-November-2018 13:04:06.409 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 13:04:06.658 INFO]:      EVENTID: 2011     MESSAGE: Creating Order Succeeded:  5
+[29-November-2018 13:04:07.991 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 13:04:08.237 INFO]:      EVENTID: 2011     MESSAGE: Creating Order Succeeded:  6
+[29-November-2018 18:28:13.639 INFO]:      EVENTID: 1003     MESSAGE: Creating City By Json:  
+[29-November-2018 18:28:14.423 INFO]:      EVENTID: 1003     MESSAGE: Creating City in Logistic:  Braga
+[29-November-2018 18:28:14.424 INFO]:      EVENTID: 2011     MESSAGE: Creating City Succeeded:  Braga
+[29-November-2018 18:28:19.450 INFO]:      EVENTID: 1003     MESSAGE: Creating City By Json:  
+[29-November-2018 18:28:21.061 INFO]:      EVENTID: 1003     MESSAGE: Creating City in Logistic:  Coimbra
+[29-November-2018 18:28:21.062 INFO]:      EVENTID: 2011     MESSAGE: Creating City Succeeded:  Coimbra
+[29-November-2018 18:28:25.738 INFO]:      EVENTID: 1003     MESSAGE: Creating By Json:  f7
+[29-November-2018 18:28:25.845 WARN]:      EVENTID: 4041     MESSAGE: Getting City Failed: Name of city => There are no City with the given name
+[29-November-2018 18:28:36.005 INFO]:      EVENTID: 1003     MESSAGE: Creating By Json:  f7
+[29-November-2018 18:28:36.514 ERROR]:      EVENTID: 4003     MESSAGE: Creating manufacture Failed: JSON is not valid =>  Manufactory validation failed: coordinates: Error, expected `coordinates` to be unique. Value: `[object Object]`, factoryRef: Error, expected `factoryRef` to be unique. Value: `f7`
+[29-November-2018 18:29:32.694 INFO]:      EVENTID: 1003     MESSAGE: Creating By Json:  f7
+[29-November-2018 18:29:35.868 ERROR]:      EVENTID: 4003     MESSAGE: Creating manufacture Failed: JSON is not valid =>  Manufactory validation failed: factoryRef: Error, expected `factoryRef` to be unique. Value: `f7`
+[29-November-2018 18:29:49.432 INFO]:      EVENTID: 1003     MESSAGE: Creating By Json:  f1
+[29-November-2018 18:29:50.068 INFO]:      EVENTID: 2011     MESSAGE: Creating manufacture Succeeded:  f1
+[29-November-2018 18:30:03.239 INFO]:      EVENTID: 1003     MESSAGE: Creating By Json:  f2
+[29-November-2018 18:30:09.084 INFO]:      EVENTID: 2011     MESSAGE: Creating manufacture Succeeded:  f2
+[29-November-2018 18:33:00.156 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[29-November-2018 18:33:00.619 INFO]:      EVENTID: 2011     MESSAGE: Creating Order Succeeded:  1
+[29-November-2018 18:33:27.706 INFO]:      EVENTID: 1001     MESSAGE: Getting Best Manufacture By Reference:  undefined
+[30-November-2018 17:06:10.711 INFO]:      EVENTID: 1002     MESSAGE: Getting All Cities:  
+[30-November-2018 17:06:10.814 INFO]:      EVENTID: 2002     MESSAGE: Getting All Cities Succeeded:  [ { _id: 5c002fbd08ee8516740a10d6,
+    cityName: 'Braga',
+    cityCoordinates: { latitude: 50.0181, longitude: 78.96709 },
+    __v: 0 },
+  { _id: 5c002fc408ee8516740a10d7,
+    cityName: 'Coimbra',
+    cityCoordinates: { latitude: 7.018, longitude: 7.308 },
+    __v: 0 } ]
+[30-November-2018 17:06:10.821 INFO]:      EVENTID: 1002     MESSAGE: Getting All Sizes 
+[30-November-2018 17:06:10.872 INFO]:      EVENTID: 2002     MESSAGE: Getting All Sizes Succeeded:  []
+[30-November-2018 17:06:10.877 INFO]:      EVENTID: 1002     MESSAGE: Getting All Orders 
+[30-November-2018 17:06:11.108 INFO]:      EVENTID: 2002     MESSAGE: Getting All Orders Succeeded:  [ { orderRef: '1',
+    orderState: { _id: 5c0030dc08ee8516740a10e0,
+       state: 'Em Validação',
+       date: '29/11/2018 18:33:00' },
+    packages: CoreMongooseArray [] } ]
+[30-November-2018 17:06:11.112 INFO]:      EVENTID: 1002     MESSAGE: Getting All Manufactures:  
+[30-November-2018 17:06:11.168 INFO]:      EVENTID: 2002     MESSAGE: Getting All Manufactures Succeeded:  [ { _id: 5c002fc908ee8516740a10d8,
+    factoryRef: 'f7',
+    cityName: 'Évora',
+    name: 'fábrica1',
+    coordinates: { latitude: 2626.2, longitude: 278.6 },
+    __v: 0 },
+  { _id: 5c00301d08ee8516740a10db,
+    factoryRef: 'f1',
+    cityName: 'Braga',
+    name: 'fábrica1',
+    coordinates: { latitude: 326.2, longitude: 278.6 },
+    __v: 0 },
+  { _id: 5c00302b08ee8516740a10dc,
+    factoryRef: 'f2',
+    cityName: 'Coimbra',
+    name: 'fábrica5',
+    coordinates: { latitude: 26.223, longitude: 28.623 },
+    __v: 0 } ]
+[30-November-2018 17:06:40.781 INFO]:      EVENTID: 1001     MESSAGE: Getting Best Manufacture By Reference:  undefined
+[30-November-2018 17:06:40.858 INFO]:      EVENTID: 2001     MESSAGE: Getting manufacture Succeeded:  f2
+[30-November-2018 17:13:40.771 INFO]:      EVENTID: 1003     MESSAGE: Creating Size By Json:  
+[30-November-2018 17:13:40.943 INFO]:      EVENTID: 2011     MESSAGE: Creating Size Succeeded:  size1
+[30-November-2018 17:13:40.943 INFO]:      EVENTID: 1003     MESSAGE: Creating PackageSize in Logistic:  size1
+[30-November-2018 17:13:40.944 INFO]:      EVENTID: 2011     MESSAGE: Creating PackageSize Succeeded:  size1
+[30-November-2018 17:14:23.622 INFO]:      EVENTID: 1003     MESSAGE: Creating Size By Json:  
+[30-November-2018 17:14:23.775 INFO]:      EVENTID: 2011     MESSAGE: Creating Size Succeeded:  size1
+[30-November-2018 17:14:23.776 INFO]:      EVENTID: 1003     MESSAGE: Creating PackageSize in Logistic:  size1
+[30-November-2018 17:14:23.776 INFO]:      EVENTID: 2011     MESSAGE: Creating PackageSize Succeeded:  size1
+[30-November-2018 17:14:35.620 INFO]:      EVENTID: 1003     MESSAGE: Creating Size By Json:  
+[30-November-2018 17:14:35.769 INFO]:      EVENTID: 2011     MESSAGE: Creating Size Succeeded:  size2
+[30-November-2018 17:14:35.769 INFO]:      EVENTID: 1003     MESSAGE: Creating PackageSize in Logistic:  size2
+[30-November-2018 17:14:35.770 INFO]:      EVENTID: 2011     MESSAGE: Creating PackageSize Succeeded:  size2
+[30-November-2018 17:14:48.325 INFO]:      EVENTID: 1003     MESSAGE: Creating Size By Json:  
+[30-November-2018 17:14:48.774 INFO]:      EVENTID: 2011     MESSAGE: Creating Size Succeeded:  size3
+[30-November-2018 17:14:48.775 INFO]:      EVENTID: 1003     MESSAGE: Creating PackageSize in Logistic:  size3
+[30-November-2018 17:14:48.775 INFO]:      EVENTID: 2011     MESSAGE: Creating PackageSize Succeeded:  size3
+[30-November-2018 17:14:55.598 INFO]:      EVENTID: 1004     MESSAGE: Updating State of Order 1
+[30-November-2018 17:15:00.535 INFO]:      EVENTID: 2004     MESSAGE: Updating State of Order Succeeded:  { _id: 5c01700f268782339c482c54,
+  state: 'Produzida',
+  date: '30/11/2018 17:14:55' }
+[30-November-2018 17:15:13.979 INFO]:      EVENTID: 1004     MESSAGE: Add Packages of Order 1
+[30-November-2018 17:15:14.481 INFO]:      EVENTID: 2004     MESSAGE: Updating State of Order Succeeded:  1
+[30-November-2018 17:15:19.161 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  1
+[30-November-2018 17:15:19.340 INFO]:      EVENTID: 2001     MESSAGE: Getting Order Succeeded:  1
+[03-December-2018 16:48:02.344 INFO]:      EVENTID: 1002     MESSAGE: Getting All Sizes 
+[03-December-2018 16:48:03.458 INFO]:      EVENTID: 2002     MESSAGE: Getting All Sizes Succeeded:  [ { _id: 5c016fef268782339c482c4f,
+    sizeRef: 'size1',
+    height: 3,
+    width: 2,
+    depth: 3,
+    recWeight: 100,
+    __v: 0 },
+  { _id: 5c016ffb268782339c482c50,
+    sizeRef: 'size2',
+    height: 2,
+    width: 2,
+    depth: 2,
+    recWeight: 600,
+    __v: 0 },
+  { _id: 5c017008268782339c482c51,
+    sizeRef: 'size3',
+    height: 2,
+    width: 3,
+    depth: 2,
+    recWeight: 1200,
+    __v: 0 } ]
+[03-December-2018 16:51:29.438 INFO]:      EVENTID: 1003     MESSAGE: Creating Size By Json:  
+[03-December-2018 16:52:45.833 INFO]:      EVENTID: 1003     MESSAGE: Creating Size By Json:  
+[03-December-2018 16:52:46.295 INFO]:      EVENTID: 2011     MESSAGE: Creating Size Succeeded:  size1
+[03-December-2018 16:52:46.295 INFO]:      EVENTID: 1003     MESSAGE: Creating PackageSize in Logistic:  size1
+[03-December-2018 16:52:46.296 INFO]:      EVENTID: 2011     MESSAGE: Creating PackageSize Succeeded:  size1
+[03-December-2018 16:53:01.847 INFO]:      EVENTID: 1003     MESSAGE: Creating Size By Json:  
+[03-December-2018 16:53:10.750 ERROR]:      EVENTID: 4003     MESSAGE: Creating Size Failed: JSON is not valid =>  Minimum weight is bigger than maximum.
+[03-December-2018 16:53:26.901 INFO]:      EVENTID: 1003     MESSAGE: Creating Size By Json:  
+[03-December-2018 16:53:27.321 ERROR]:      EVENTID: 4003     MESSAGE: Creating Size Failed: JSON is not valid =>  PackageSize validation failed: sizeRef: Error, expected `sizeRef` to be unique. Value: `size2`
+[03-December-2018 16:54:04.895 INFO]:      EVENTID: 1003     MESSAGE: Creating Size By Json:  
+[03-December-2018 16:54:05.347 INFO]:      EVENTID: 2011     MESSAGE: Creating Size Succeeded:  size2
+[03-December-2018 16:54:05.348 INFO]:      EVENTID: 1003     MESSAGE: Creating PackageSize in Logistic:  size2
+[03-December-2018 16:54:05.349 INFO]:      EVENTID: 2011     MESSAGE: Creating PackageSize Succeeded:  size2
+[03-December-2018 16:55:10.618 INFO]:      EVENTID: 1003     MESSAGE: Creating Size By Json:  
+[03-December-2018 16:55:12.232 INFO]:      EVENTID: 2011     MESSAGE: Creating Size Succeeded:  size3
+[03-December-2018 16:55:12.233 INFO]:      EVENTID: 1003     MESSAGE: Creating PackageSize in Logistic:  size3
+[03-December-2018 16:55:12.233 INFO]:      EVENTID: 2011     MESSAGE: Creating PackageSize Succeeded:  size3
+[03-December-2018 16:55:18.603 INFO]:      EVENTID: 1002     MESSAGE: Getting All Sizes 
+[03-December-2018 16:55:19.152 INFO]:      EVENTID: 2002     MESSAGE: Getting All Sizes Succeeded:  [ { _id: 5c055f5e9cf4c208e8a8117b,
+    sizeRef: 'size1',
+    height: 3,
+    width: 2,
+    depth: 3,
+    minWeight: 0,
+    maxWeight: 200,
+    __v: 0 },
+  { _id: 5c055fad9cf4c208e8a8117e,
+    sizeRef: 'size2',
+    height: 2,
+    width: 2,
+    depth: 2,
+    __v: 0 },
+  { _id: 5c055ff09cf4c208e8a8117f,
+    sizeRef: 'size3',
+    height: 2,
+    width: 3,
+    depth: 2,
+    minWeight: 1500,
+    maxWeight: 3000,
+    __v: 0 } ]
+[03-December-2018 16:55:24.720 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[03-December-2018 17:03:02.593 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[03-December-2018 17:05:37.918 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[03-December-2018 17:08:36.097 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[03-December-2018 17:09:22.947 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[03-December-2018 17:13:33.732 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[03-December-2018 17:17:07.880 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[03-December-2018 17:37:20.123 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[03-December-2018 17:38:58.502 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[03-December-2018 17:40:54.114 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[03-December-2018 17:41:28.446 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[03-December-2018 17:46:57.634 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[03-December-2018 17:48:45.204 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[03-December-2018 17:49:12.700 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[03-December-2018 17:50:34.579 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[03-December-2018 17:51:52.439 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[03-December-2018 17:53:06.294 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[03-December-2018 17:54:26.958 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[03-December-2018 17:56:17.598 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[03-December-2018 17:57:49.852 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[03-December-2018 17:59:17.684 INFO]:      EVENTID: 1004     MESSAGE: Updating State of Order 8
+[03-December-2018 18:02:53.456 INFO]:      EVENTID: 1004     MESSAGE: Updating State of Order 8
+[03-December-2018 18:08:02.785 INFO]:      EVENTID: 1004     MESSAGE: Updating State of Order 8
+[03-December-2018 18:08:02.899 WARN]:      EVENTID: 4004     MESSAGE: ERROR:  Not possible to update state.
+[03-December-2018 18:10:02.550 INFO]:      EVENTID: 1004     MESSAGE: Updating State of Order 8
+[03-December-2018 18:10:03.010 INFO]:      EVENTID: 2004     MESSAGE: Updating State of Order Succeeded:  { _id: 5c05717a004d4839b4e7ca5e }
+[03-December-2018 18:10:09.612 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  8
+[03-December-2018 18:10:10.153 INFO]:      EVENTID: 2001     MESSAGE: Getting Order Succeeded:  8
+[03-December-2018 18:11:10.448 INFO]:      EVENTID: 1004     MESSAGE: Updating State of Order 8
+[03-December-2018 18:13:05.958 INFO]:      EVENTID: 1002     MESSAGE: Getting All Sizes 
+[03-December-2018 18:13:06.010 INFO]:      EVENTID: 2002     MESSAGE: Getting All Sizes Succeeded:  [ { _id: 5c055f5e9cf4c208e8a8117b,
+    sizeRef: 'size1',
+    height: 3,
+    width: 2,
+    depth: 3,
+    minWeight: 0,
+    maxWeight: 200,
+    __v: 0 },
+  { _id: 5c055fad9cf4c208e8a8117e,
+    sizeRef: 'size2',
+    height: 2,
+    width: 2,
+    depth: 2,
+    __v: 0 },
+  { _id: 5c055ff09cf4c208e8a8117f,
+    sizeRef: 'size3',
+    height: 2,
+    width: 3,
+    depth: 2,
+    minWeight: 1500,
+    maxWeight: 3000,
+    __v: 0 } ]
+[03-December-2018 18:13:08.265 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[03-December-2018 18:16:18.712 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[03-December-2018 18:16:20.055 INFO]:      EVENTID: 2011     MESSAGE: Creating Order Succeeded:  1
+[03-December-2018 18:17:22.308 INFO]:      EVENTID: 1004     MESSAGE: Updating State of Order 8
+[03-December-2018 18:17:25.888 WARN]:      EVENTID: 4041     MESSAGE: Getting Order Failed: Reference of order => There are no Order with the given reference
+[03-December-2018 18:17:32.446 INFO]:      EVENTID: 1004     MESSAGE: Updating State of Order 1
+[03-December-2018 18:17:41.347 INFO]:      EVENTID: 2004     MESSAGE: Updating State of Order Succeeded:  { _id: 5c05734547894550d876c4a4 }
+[03-December-2018 18:17:50.392 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  1
+[03-December-2018 18:18:23.306 INFO]:      EVENTID: 2001     MESSAGE: Getting Order Succeeded:  1
+[03-December-2018 18:20:24.122 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  1
+[03-December-2018 18:20:25.216 INFO]:      EVENTID: 2001     MESSAGE: Getting Order Succeeded:  1
+[03-December-2018 18:20:28.289 INFO]:      EVENTID: 1004     MESSAGE: Updating State of Order 1
+[03-December-2018 18:21:21.336 INFO]:      EVENTID: 1004     MESSAGE: Updating State of Order 1
+[03-December-2018 18:22:46.075 INFO]:      EVENTID: 2004     MESSAGE: Updating State of Order Succeeded:  { _id: 5c05741cd8f69e40048c12f5 }
+[03-December-2018 18:22:46.143 INFO]:      EVENTID: 2004     MESSAGE: Updating State of Order Succeeded:  { _id: 5c057476d8f69e40048c12f8 }
+[03-December-2018 18:22:51.499 INFO]:      EVENTID: 1004     MESSAGE: Updating State of Order 1
+[03-December-2018 18:23:23.839 INFO]:      EVENTID: 2004     MESSAGE: Updating State of Order Succeeded:  { _id: 5c05749bd8f69e40048c12fd }
+[03-December-2018 18:23:28.302 INFO]:      EVENTID: 1004     MESSAGE: Updating State of Order 1
+[03-December-2018 18:24:55.208 INFO]:      EVENTID: 2004     MESSAGE: Updating State of Order Succeeded:  { _id: 5c0574f7d8f69e40048c1301 }
+[03-December-2018 18:25:01.399 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  1
+[03-December-2018 18:25:01.483 INFO]:      EVENTID: 2001     MESSAGE: Getting Order Succeeded:  1
+[03-December-2018 18:25:04.825 INFO]:      EVENTID: 1004     MESSAGE: Updating State of Order 1
+[03-December-2018 18:26:16.764 INFO]:      EVENTID: 1004     MESSAGE: Updating State of Order 1
+[03-December-2018 18:27:01.434 INFO]:      EVENTID: 2004     MESSAGE: Updating State of Order Succeeded:  { _id: 5c057574802c632eec6d612c }
+[03-December-2018 18:27:10.498 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  1
+[03-December-2018 18:27:10.629 INFO]:      EVENTID: 2001     MESSAGE: Getting Order Succeeded:  1
+[03-December-2018 18:28:49.770 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[03-December-2018 18:28:49.995 INFO]:      EVENTID: 2011     MESSAGE: Creating Order Succeeded:  1
+[03-December-2018 18:28:54.456 INFO]:      EVENTID: 1004     MESSAGE: Updating State of Order 1
+[03-December-2018 18:29:27.047 INFO]:      EVENTID: 2004     MESSAGE: Updating State of Order Succeeded:  { _id: 5c0576052e09a406f4e1dc93 }
+[03-December-2018 18:29:33.377 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  1
+[03-December-2018 18:29:34.610 INFO]:      EVENTID: 2001     MESSAGE: Getting Order Succeeded:  1
+[03-December-2018 18:38:58.492 INFO]:      EVENTID: 1004     MESSAGE: Updating State of Order 1
+[03-December-2018 18:39:46.761 INFO]:      EVENTID: 2004     MESSAGE: Updating State of Order Succeeded:  { _id: 5c05787001251f1584cd1409,
+  state: 'Produzida',
+  date: '03/12/2018 18:39:12' }
+[03-December-2018 18:40:28.970 INFO]:      EVENTID: 1004     MESSAGE: Updating State of Order 1
+[03-December-2018 18:41:11.865 INFO]:      EVENTID: 2004     MESSAGE: Updating State of Order Succeeded:  { _id: 5c0578c51ed77d3ff0ccf7cf }
+[03-December-2018 18:41:17.796 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  1
+[03-December-2018 18:41:20.633 INFO]:      EVENTID: 2001     MESSAGE: Getting Order Succeeded:  1
+[03-December-2018 18:42:06.332 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[03-December-2018 18:42:07.174 INFO]:      EVENTID: 2011     MESSAGE: Creating Order Succeeded:  1
+[03-December-2018 18:42:11.414 INFO]:      EVENTID: 1004     MESSAGE: Updating State of Order 1
+[03-December-2018 18:42:33.374 INFO]:      EVENTID: 2004     MESSAGE: Updating State of Order Succeeded:  { _id: 5c057917a20afd5a38ea37f9,
+  state: 'Produzida',
+  date: '03/12/2018 18:42:15' }
+[03-December-2018 18:42:36.819 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  1
+[03-December-2018 18:42:37.458 INFO]:      EVENTID: 2001     MESSAGE: Getting Order Succeeded:  1
+[03-December-2018 18:42:42.356 INFO]:      EVENTID: 1004     MESSAGE: Updating State of Order 1
+[03-December-2018 18:43:05.557 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  1
+[03-December-2018 18:43:06.300 INFO]:      EVENTID: 2001     MESSAGE: Getting Order Succeeded:  1
+[03-December-2018 18:43:09.966 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  1
+[03-December-2018 18:43:10.805 INFO]:      EVENTID: 2001     MESSAGE: Getting Order Succeeded:  1
+[03-December-2018 18:43:22.092 INFO]:      EVENTID: 1004     MESSAGE: Updating State of Order 1
+[03-December-2018 18:43:29.630 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  1
+[03-December-2018 18:45:28.474 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[03-December-2018 18:45:28.748 INFO]:      EVENTID: 2011     MESSAGE: Creating Order Succeeded:  1
+[03-December-2018 18:45:36.599 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  1
+[03-December-2018 18:45:37.945 INFO]:      EVENTID: 2001     MESSAGE: Getting Order Succeeded:  1
+[03-December-2018 18:45:44.930 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  1
+[03-December-2018 18:45:49.147 INFO]:      EVENTID: 2001     MESSAGE: Getting Order Succeeded:  1
+[03-December-2018 18:45:51.359 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  1
+[03-December-2018 18:45:53.295 INFO]:      EVENTID: 1001     MESSAGE: Getting State By Reference:  1
+[03-December-2018 18:45:55.100 INFO]:      EVENTID: 1001     MESSAGE: Getting State By Reference:  1
+[03-December-2018 18:45:55.275 INFO]:      EVENTID: 2001     MESSAGE: Getting State Succeeded:  1
+[03-December-2018 18:45:55.644 INFO]:      EVENTID: 2001     MESSAGE: Getting State Succeeded:  1
+[03-December-2018 18:45:55.751 INFO]:      EVENTID: 2001     MESSAGE: Getting Order Succeeded:  1
+[03-December-2018 18:46:01.466 INFO]:      EVENTID: 1004     MESSAGE: Updating State of Order 1
+[03-December-2018 18:46:17.908 INFO]:      EVENTID: 2004     MESSAGE: Updating State of Order Succeeded:  1
+[03-December-2018 18:46:19.167 INFO]:      EVENTID: 1004     MESSAGE: Updating State of Order 1
+[03-December-2018 18:48:12.793 INFO]:      EVENTID: 2004     MESSAGE: Updating State of Order Succeeded:  1
+[03-December-2018 18:48:19.599 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  1
+[03-December-2018 18:48:19.693 INFO]:      EVENTID: 2001     MESSAGE: Getting Order Succeeded:  1
+[03-December-2018 18:56:36.218 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  1
+[04-December-2018 10:29:37.566 INFO]:      EVENTID: 1002     MESSAGE: Getting All Sizes 
+[04-December-2018 10:29:37.713 INFO]:      EVENTID: 2002     MESSAGE: Getting All Sizes Succeeded:  [ { _id: 5c055f5e9cf4c208e8a8117b,
+    sizeRef: 'size1',
+    height: 3,
+    width: 2,
+    depth: 3,
+    minWeight: 0,
+    maxWeight: 200,
+    __v: 0 },
+  { _id: 5c055fad9cf4c208e8a8117e,
+    sizeRef: 'size2',
+    height: 2,
+    width: 2,
+    depth: 2,
+    __v: 0 },
+  { _id: 5c055ff09cf4c208e8a8117f,
+    sizeRef: 'size3',
+    height: 2,
+    width: 3,
+    depth: 2,
+    minWeight: 1500,
+    maxWeight: 3000,
+    __v: 0 } ]
+[04-December-2018 10:29:41.069 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[04-December-2018 10:29:41.369 INFO]:      EVENTID: 2011     MESSAGE: Creating Order Succeeded:  1
+[04-December-2018 10:30:02.547 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  1
+[04-December-2018 10:30:02.834 INFO]:      EVENTID: 2001     MESSAGE: Getting Order Succeeded:  1
+[04-December-2018 10:30:17.880 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  1
+[04-December-2018 10:30:18.032 INFO]:      EVENTID: 2001     MESSAGE: Getting Order Succeeded:  1
+[04-December-2018 10:30:22.331 INFO]:      EVENTID: 1004     MESSAGE: Updating State of Order 1
+[04-December-2018 10:30:22.917 INFO]:      EVENTID: 2004     MESSAGE: Updating State of Order Succeeded:  1
+[04-December-2018 10:30:27.824 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  1
+[04-December-2018 10:30:27.981 INFO]:      EVENTID: 2001     MESSAGE: Getting Order Succeeded:  1
+[04-December-2018 10:30:34.667 INFO]:      EVENTID: 1004     MESSAGE: Add Packages of Order 1
+[04-December-2018 10:30:48.509 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  1
+[04-December-2018 10:30:48.802 INFO]:      EVENTID: 2001     MESSAGE: Getting Order Succeeded:  1
+[04-December-2018 10:32:37.988 INFO]:      EVENTID: 1004     MESSAGE: Add Packages of Order 1
+[04-December-2018 10:52:24.838 INFO]:      EVENTID: 1004     MESSAGE: Add Packages of Order 1
+[04-December-2018 10:53:29.065 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  1
+[04-December-2018 10:53:29.288 INFO]:      EVENTID: 2001     MESSAGE: Getting Order Succeeded:  1
+[04-December-2018 10:53:39.639 INFO]:      EVENTID: 1004     MESSAGE: Add Packages of Order 1
+[04-December-2018 10:53:57.132 INFO]:      EVENTID: 1004     MESSAGE: Add Packages of Order 1
+[04-December-2018 10:53:57.669 INFO]:      EVENTID: 2004     MESSAGE: Updating State of Order Succeeded:  1
+[04-December-2018 10:54:01.163 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  1
+[04-December-2018 10:54:01.277 INFO]:      EVENTID: 2001     MESSAGE: Getting Order Succeeded:  1
+[04-December-2018 10:54:03.007 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  1
+[04-December-2018 10:54:03.241 INFO]:      EVENTID: 2001     MESSAGE: Getting Order Succeeded:  1
+[04-December-2018 10:54:13.939 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[04-December-2018 10:54:14.469 INFO]:      EVENTID: 2011     MESSAGE: Creating Order Succeeded:  2
+[04-December-2018 10:54:16.416 INFO]:      EVENTID: 1004     MESSAGE: Updating State of Order 2
+[04-December-2018 10:54:17.157 INFO]:      EVENTID: 2004     MESSAGE: Updating State of Order Succeeded:  2
+[04-December-2018 10:54:18.757 INFO]:      EVENTID: 1004     MESSAGE: Add Packages of Order 2
+[04-December-2018 10:54:19.236 WARN]:      EVENTID: 4041     MESSAGE: Adding Packages failed: Json not valid => Weight in not between the min and max of packages available
+[04-December-2018 10:54:44.944 INFO]:      EVENTID: 1004     MESSAGE: Add Packages of Order 2
+[04-December-2018 10:54:45.751 INFO]:      EVENTID: 2004     MESSAGE: Updating State of Order Succeeded:  2
+[04-December-2018 10:54:48.453 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  1
+[04-December-2018 10:54:48.805 INFO]:      EVENTID: 2001     MESSAGE: Getting Order Succeeded:  1
+[04-December-2018 10:55:00.520 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  2
+[04-December-2018 10:55:00.967 INFO]:      EVENTID: 2001     MESSAGE: Getting Order Succeeded:  2
+[04-December-2018 10:56:13.624 INFO]:      EVENTID: 1002     MESSAGE: Getting All Cities:  
+[04-December-2018 10:56:13.691 INFO]:      EVENTID: 2002     MESSAGE: Getting All Cities Succeeded:  [ { _id: 5c002fbd08ee8516740a10d6,
+    cityName: 'Braga',
+    cityCoordinates: { latitude: 50.0181, longitude: 78.96709 },
+    __v: 0 },
+  { _id: 5c002fc408ee8516740a10d7,
+    cityName: 'Coimbra',
+    cityCoordinates: { latitude: 7.018, longitude: 7.308 },
+    __v: 0 } ]
+[04-December-2018 10:56:13.699 INFO]:      EVENTID: 1002     MESSAGE: Getting All Sizes 
+[04-December-2018 10:56:13.762 INFO]:      EVENTID: 2002     MESSAGE: Getting All Sizes Succeeded:  [ { _id: 5c055f5e9cf4c208e8a8117b,
+    sizeRef: 'size1',
+    height: 3,
+    width: 2,
+    depth: 3,
+    minWeight: 0,
+    maxWeight: 200,
+    __v: 0 },
+  { _id: 5c055fad9cf4c208e8a8117e,
+    sizeRef: 'size2',
+    height: 2,
+    width: 2,
+    depth: 2,
+    __v: 0 },
+  { _id: 5c055ff09cf4c208e8a8117f,
+    sizeRef: 'size3',
+    height: 2,
+    width: 3,
+    depth: 2,
+    minWeight: 1500,
+    maxWeight: 3000,
+    __v: 0 } ]
+[04-December-2018 10:56:13.768 INFO]:      EVENTID: 1002     MESSAGE: Getting All Orders 
+[04-December-2018 10:56:14.428 INFO]:      EVENTID: 2002     MESSAGE: Getting All Orders Succeeded:  [ { orderRef: '1',
+    orderState: { _id: 5c065cc58c622e67c0457f56,
+       state: 'Pronta a Expedir',
+       date: '04/12/2018 10:53:57' },
+    packages: CoreMongooseArray [ [Object], [Object], [Object], [Object] ] },
+  { orderRef: '2',
+    orderState: { _id: 5c065cf58c622e67c0457f6e,
+       state: 'Pronta a Expedir',
+       date: '04/12/2018 10:54:45' },
+    packages: CoreMongooseArray [ [Object], [Object] ] } ]
+[04-December-2018 10:56:14.434 INFO]:      EVENTID: 1002     MESSAGE: Getting All Manufactures:  
+[04-December-2018 10:56:14.500 INFO]:      EVENTID: 2002     MESSAGE: Getting All Manufactures Succeeded:  [ { _id: 5c002fc908ee8516740a10d8,
+    factoryRef: 'f7',
+    cityName: 'Évora',
+    name: 'fábrica1',
+    coordinates: { latitude: 2626.2, longitude: 278.6 },
+    __v: 0 },
+  { _id: 5c00301d08ee8516740a10db,
+    factoryRef: 'f1',
+    cityName: 'Braga',
+    name: 'fábrica1',
+    coordinates: { latitude: 326.2, longitude: 278.6 },
+    __v: 0 },
+  { _id: 5c00302b08ee8516740a10dc,
+    factoryRef: 'f2',
+    cityName: 'Coimbra',
+    name: 'fábrica5',
+    coordinates: { latitude: 26.223, longitude: 28.623 },
+    __v: 0 } ]
+[04-December-2018 11:07:41.037 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[04-December-2018 11:07:41.367 INFO]:      EVENTID: 2011     MESSAGE: Creating Order Succeeded:  1
+[04-December-2018 11:07:42.990 INFO]:      EVENTID: 1004     MESSAGE: Updating State of Order 1
+[04-December-2018 11:07:43.372 INFO]:      EVENTID: 2004     MESSAGE: Updating State of Order Succeeded:  1
+[04-December-2018 11:07:45.177 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  1
+[04-December-2018 11:07:45.278 INFO]:      EVENTID: 2001     MESSAGE: Getting Order Succeeded:  1
+[04-December-2018 11:07:47.307 INFO]:      EVENTID: 1004     MESSAGE: Add Packages of Order 1
+[04-December-2018 11:07:47.792 INFO]:      EVENTID: 2004     MESSAGE: Updating State of Order Succeeded:  1
+[04-December-2018 11:07:50.274 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  1
+[04-December-2018 11:07:50.390 INFO]:      EVENTID: 2001     MESSAGE: Getting Order Succeeded:  1
+[04-December-2018 11:07:52.718 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  1
+[04-December-2018 11:07:52.946 INFO]:      EVENTID: 2001     MESSAGE: Getting Order Succeeded:  1
+[04-December-2018 11:07:55.349 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[04-December-2018 11:07:55.771 INFO]:      EVENTID: 2011     MESSAGE: Creating Order Succeeded:  2
+[04-December-2018 11:08:01.420 INFO]:      EVENTID: 1004     MESSAGE: Updating State of Order 2
+[04-December-2018 11:08:01.915 INFO]:      EVENTID: 2004     MESSAGE: Updating State of Order Succeeded:  2
+[04-December-2018 11:08:03.907 INFO]:      EVENTID: 1004     MESSAGE: Add Packages of Order 2
+[04-December-2018 11:08:04.530 INFO]:      EVENTID: 2004     MESSAGE: Updating State of Order Succeeded:  2
+[04-December-2018 11:08:08.215 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  2
+[04-December-2018 11:08:08.550 INFO]:      EVENTID: 2001     MESSAGE: Getting Order Succeeded:  2
+[04-December-2018 11:12:17.599 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[04-December-2018 11:12:17.866 INFO]:      EVENTID: 2011     MESSAGE: Creating Order Succeeded:  1
+[04-December-2018 11:12:20.292 INFO]:      EVENTID: 1004     MESSAGE: Updating State of Order 1
+[04-December-2018 11:12:20.638 INFO]:      EVENTID: 2004     MESSAGE: Updating State of Order Succeeded:  1
+[04-December-2018 11:12:22.661 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  1
+[04-December-2018 11:12:22.724 INFO]:      EVENTID: 2001     MESSAGE: Getting Order Succeeded:  1
+[04-December-2018 11:12:24.782 INFO]:      EVENTID: 1004     MESSAGE: Add Packages of Order 1
+[04-December-2018 11:12:25.015 WARN]:      EVENTID: 4041     MESSAGE: Adding Packages failed: Json not valid => Weight in not between the min and max of packages available
+[04-December-2018 11:12:34.049 INFO]:      EVENTID: 1002     MESSAGE: Getting All Sizes 
+[04-December-2018 11:12:34.153 INFO]:      EVENTID: 2002     MESSAGE: Getting All Sizes Succeeded:  [ { _id: 5c055f5e9cf4c208e8a8117b,
+    sizeRef: 'size1',
+    height: 3,
+    width: 2,
+    depth: 3,
+    minWeight: 0,
+    maxWeight: 200,
+    __v: 0 },
+  { _id: 5c055fad9cf4c208e8a8117e,
+    sizeRef: 'size2',
+    height: 2,
+    width: 2,
+    depth: 2,
+    __v: 0 },
+  { _id: 5c055ff09cf4c208e8a8117f,
+    sizeRef: 'size3',
+    height: 2,
+    width: 3,
+    depth: 2,
+    minWeight: 1500,
+    maxWeight: 3000,
+    __v: 0 } ]
+[04-December-2018 11:12:42.829 INFO]:      EVENTID: 1004     MESSAGE: Add Packages of Order 1
+[04-December-2018 11:12:43.085 WARN]:      EVENTID: 4041     MESSAGE: Adding Packages failed: Json not valid => Weight in not between the min and max of packages available
+[04-December-2018 11:50:31.993 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[04-December-2018 11:50:32.257 INFO]:      EVENTID: 2011     MESSAGE: Creating Order Succeeded:  1
+[04-December-2018 11:50:40.967 INFO]:      EVENTID: 1004     MESSAGE: Updating State of Order 1
+[04-December-2018 11:50:41.206 INFO]:      EVENTID: 2004     MESSAGE: Updating State of Order Succeeded:  1
+[04-December-2018 11:50:48.616 INFO]:      EVENTID: 1004     MESSAGE: Updating State of Order 1
+[04-December-2018 11:50:48.960 INFO]:      EVENTID: 2004     MESSAGE: Updating State of Order Succeeded:  1
+[04-December-2018 11:51:02.875 INFO]:      EVENTID: 1001     MESSAGE: Getting State By Reference:  1
+[04-December-2018 11:51:03.108 INFO]:      EVENTID: 2001     MESSAGE: Getting State Succeeded:  1
+[04-December-2018 11:51:05.022 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  1
+[04-December-2018 11:51:05.123 INFO]:      EVENTID: 2001     MESSAGE: Getting Order Succeeded:  1
+[04-December-2018 11:51:10.925 INFO]:      EVENTID: 1004     MESSAGE: Updating State of Order 1
+[04-December-2018 11:51:11.263 INFO]:      EVENTID: 2004     MESSAGE: Updating State of Order Succeeded:  1
+[04-December-2018 11:51:14.856 INFO]:      EVENTID: 1004     MESSAGE: Add Packages of Order 1
+[04-December-2018 11:52:15.146 INFO]:      EVENTID: 1004     MESSAGE: Add Packages of Order 1
+[04-December-2018 11:52:51.821 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  1
+[04-December-2018 11:52:52.181 INFO]:      EVENTID: 2001     MESSAGE: Getting Order Succeeded:  1
+[04-December-2018 11:53:06.577 INFO]:      EVENTID: 1001     MESSAGE: Getting State By Reference:  1
+[04-December-2018 11:59:09.745 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[04-December-2018 12:01:03.703 INFO]:      EVENTID: 2011     MESSAGE: Creating Order Succeeded:  1
+[04-December-2018 12:01:15.157 INFO]:      EVENTID: 1004     MESSAGE: Updating State of Order 1
+[04-December-2018 12:01:16.835 INFO]:      EVENTID: 2004     MESSAGE: Updating State of Order Succeeded:  1
+[04-December-2018 12:01:22.012 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  1
+[04-December-2018 12:01:22.701 INFO]:      EVENTID: 2001     MESSAGE: Getting Order Succeeded:  1
+[04-December-2018 12:01:26.350 INFO]:      EVENTID: 1001     MESSAGE: Getting State By Reference:  1
+[04-December-2018 12:02:54.385 INFO]:      EVENTID: 2001     MESSAGE: Getting State Succeeded:  1
+[04-December-2018 12:03:09.529 INFO]:      EVENTID: 1004     MESSAGE: Add Packages of Order 1
+[04-December-2018 12:04:58.219 INFO]:      EVENTID: 1004     MESSAGE: Add Packages of Order 1
+[04-December-2018 12:04:58.685 WARN]:      EVENTID: 4041     MESSAGE: Adding Packages failed: Json not valid => Weight in not between the min and max of packages available
+[04-December-2018 12:07:10.641 INFO]:      EVENTID: 1004     MESSAGE: Add Packages of Order 1
+[04-December-2018 12:07:10.958 WARN]:      EVENTID: 4041     MESSAGE: Adding Packages failed: Json not valid => Weight in not between the min and max of packages available
+[04-December-2018 12:07:18.811 INFO]:      EVENTID: 1002     MESSAGE: Getting All Sizes 
+[04-December-2018 12:07:18.866 INFO]:      EVENTID: 2002     MESSAGE: Getting All Sizes Succeeded:  [ { _id: 5c055f5e9cf4c208e8a8117b,
+    sizeRef: 'size1',
+    height: 3,
+    width: 2,
+    depth: 3,
+    minWeight: 0,
+    maxWeight: 200,
+    __v: 0 },
+  { _id: 5c055fad9cf4c208e8a8117e,
+    sizeRef: 'size2',
+    height: 2,
+    width: 2,
+    depth: 2,
+    __v: 0 },
+  { _id: 5c055ff09cf4c208e8a8117f,
+    sizeRef: 'size3',
+    height: 2,
+    width: 3,
+    depth: 2,
+    minWeight: 1500,
+    maxWeight: 3000,
+    __v: 0 } ]
+[04-December-2018 12:08:14.490 INFO]:      EVENTID: 1004     MESSAGE: Add Packages of Order 1
+[04-December-2018 12:08:14.802 WARN]:      EVENTID: 4041     MESSAGE: Adding Packages failed: Json not valid => Weight in not between the min and max of packages available
+[04-December-2018 12:09:05.533 INFO]:      EVENTID: 1003     MESSAGE: Creating Size By Json:  
+[04-December-2018 12:09:05.752 INFO]:      EVENTID: 2011     MESSAGE: Creating Size Succeeded:  size2
+[04-December-2018 12:09:05.753 INFO]:      EVENTID: 1003     MESSAGE: Creating PackageSize in Logistic:  size2
+[04-December-2018 12:09:05.754 INFO]:      EVENTID: 2011     MESSAGE: Creating PackageSize Succeeded:  size2
+[04-December-2018 12:09:11.119 INFO]:      EVENTID: 1004     MESSAGE: Add Packages of Order 1
+[04-December-2018 12:09:11.367 WARN]:      EVENTID: 4041     MESSAGE: Adding Packages failed: Json not valid => Weight in not between the min and max of packages available
+[04-December-2018 14:20:37.660 INFO]:      EVENTID: 1003     MESSAGE: Creating Size By Json:  
+[04-December-2018 14:20:38.687 INFO]:      EVENTID: 2011     MESSAGE: Creating Size Succeeded:  size2
+[04-December-2018 14:20:38.687 INFO]:      EVENTID: 1003     MESSAGE: Creating PackageSize in Logistic:  size2
+[04-December-2018 14:20:38.688 INFO]:      EVENTID: 2011     MESSAGE: Creating PackageSize Succeeded:  size2
+[04-December-2018 14:21:14.289 INFO]:      EVENTID: 1004     MESSAGE: Add Packages of Order 1
+[04-December-2018 14:21:17.148 WARN]:      EVENTID: 4041     MESSAGE: Adding Packages failed: Json not valid => Weight in not between the min and max of packages available
+[04-December-2018 14:26:10.019 INFO]:      EVENTID: 1004     MESSAGE: Add Packages of Order 1
+[04-December-2018 14:27:35.283 INFO]:      EVENTID: 1004     MESSAGE: Add Packages of Order 1
+[04-December-2018 14:28:25.536 INFO]:      EVENTID: 1004     MESSAGE: Add Packages of Order 1
+[04-December-2018 14:28:58.284 INFO]:      EVENTID: 1004     MESSAGE: Add Packages of Order 1
+[04-December-2018 14:30:02.169 INFO]:      EVENTID: 1004     MESSAGE: Add Packages of Order 1
+[04-December-2018 14:30:38.571 WARN]:      EVENTID: 4041     MESSAGE: Adding Packages failed: Json not valid => Weight in not between the min and max of packages available
+[04-December-2018 14:31:28.938 INFO]:      EVENTID: 1004     MESSAGE: Add Packages of Order 1
+[04-December-2018 14:32:46.385 INFO]:      EVENTID: 1004     MESSAGE: Add Packages of Order 1
+[04-December-2018 14:33:18.608 INFO]:      EVENTID: 2004     MESSAGE: Updating State of Order Succeeded:  1
+[04-December-2018 14:33:25.120 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  1
+[04-December-2018 14:33:26.952 INFO]:      EVENTID: 2001     MESSAGE: Getting Order Succeeded:  1
+[04-December-2018 14:33:31.005 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  1
+[04-December-2018 14:33:46.437 INFO]:      EVENTID: 2001     MESSAGE: Getting Order Succeeded:  1
+[04-December-2018 14:34:07.466 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[04-December-2018 14:35:00.937 INFO]:      EVENTID: 2011     MESSAGE: Creating Order Succeeded:  2
+[04-December-2018 14:35:19.533 INFO]:      EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[04-December-2018 14:35:22.158 INFO]:      EVENTID: 2011     MESSAGE: Creating Order Succeeded:  3
+[04-December-2018 14:35:42.212 INFO]:      EVENTID: 1004     MESSAGE: Updating State of Order 2
+[04-December-2018 14:35:44.011 INFO]:      EVENTID: 2004     MESSAGE: Updating State of Order Succeeded:  2
+[04-December-2018 14:35:52.689 INFO]:      EVENTID: 1004     MESSAGE: Add Packages of Order 2
+[04-December-2018 14:36:04.083 WARN]:      EVENTID: 4041     MESSAGE: Adding Packages failed: Json not valid => Weight in not between the min and max of packages available
+[04-December-2018 14:36:11.801 INFO]:      EVENTID: 1004     MESSAGE: Add Packages of Order 2
+[04-December-2018 14:36:52.281 INFO]:      EVENTID: 1004     MESSAGE: Add Packages of Order 2
+[04-December-2018 14:37:34.507 WARN]:      EVENTID: 4041     MESSAGE: Adding Packages failed: Json not valid => Weight in not between the min and max of packages available
+[04-December-2018 14:38:14.281 INFO]:      EVENTID: 1004     MESSAGE: Add Packages of Order 2
+[04-December-2018 14:38:46.387 INFO]:      EVENTID: 2004     MESSAGE: Updating State of Order Succeeded:  2
+[04-December-2018 14:39:58.359 INFO]:      EVENTID: 1002     MESSAGE: Getting All Orders By Client:  undefined
+[04-December-2018 14:41:05.029 INFO]:      EVENTID: 1002     MESSAGE: Getting All Orders By Client:  undefined
+[04-December-2018 14:42:08.957 INFO]:      EVENTID: 1002     MESSAGE: Getting All Orders By Client:  undefined
+[04-December-2018 14:42:23.135 INFO]:      EVENTID: 2002     MESSAGE: Getting All Manufactures Succeeded:  
+[04-December-2018 14:42:40.598 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  1
+[04-December-2018 14:42:40.883 INFO]:      EVENTID: 2001     MESSAGE: Getting Order Succeeded:  1
+[04-December-2018 14:44:13.912 INFO]:      EVENTID: 1002     MESSAGE: Getting All Orders By Client:  undefined
+[04-December-2018 14:44:14.511 INFO]:      EVENTID: 2002     MESSAGE: Getting All Manufactures Succeeded:  
+[04-December-2018 14:44:29.692 INFO]:      EVENTID: 1001     MESSAGE: Getting Order By Reference:  2
+[04-December-2018 14:44:33.963 INFO]:      EVENTID: 2001     MESSAGE: Getting Order Succeeded:  2
+[04-December-2018 14:45:15.644 INFO]:      EVENTID: 1002     MESSAGE: Getting All Orders By Client:  undefined
+[04-December-2018 14:45:26.874 INFO]:      EVENTID: 2002     MESSAGE: Getting All Manufactures Succeeded:  
+[04-December-2018 14:47:11.275 INFO]:      EVENTID: 1002     MESSAGE: Getting All Orders By Client:  undefined
+[04-December-2018 14:47:12.806 INFO]:      EVENTID: 2002     MESSAGE: Getting All Manufactures Succeeded:  
+[04-December-2018 14:48:06.178 INFO]:      EVENTID: 1002     MESSAGE: Getting All Orders By Client:  undefined
+[04-December-2018 14:48:06.512 INFO]:      EVENTID: 2002     MESSAGE: Getting All Manufactures Succeeded:  
+[04-December-2018 14:48:40.676 INFO]:      EVENTID: 1002     MESSAGE: Getting All Orders By Client:  undefined
+[04-December-2018 14:48:45.216 INFO]:      EVENTID: 2002     MESSAGE: Getting All Manufactures Succeeded:  
+[04-December-2018 14:49:15.908 INFO]:      EVENTID: 1002     MESSAGE: Getting All Orders By Client:  undefined
+[04-December-2018 14:49:18.968 INFO]:      EVENTID: 2002     MESSAGE: Getting All Manufactures Succeeded:  
+[04-December-2018 14:50:28.601 INFO]:      EVENTID: 1002     MESSAGE: Getting All Orders By Client:  undefined
+[04-December-2018 14:50:32.253 INFO]:      EVENTID: 2002     MESSAGE: Getting All Manufactures Succeeded:  
+[04-December-2018 14:51:15.067 INFO]:      EVENTID: 1002     MESSAGE: Getting All Orders By Client:  undefined
+[04-December-2018 14:51:25.293 INFO]:      EVENTID: 2002     MESSAGE: Getting All Manufactures Succeeded:  

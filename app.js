@@ -15,7 +15,7 @@
 	const orderModel = require('./models/order.model');
     
     const mongoose = require('mongoose');
-    let orders_db_url = 'mongodb://Vasco:a123456@ds042527.mlab.com:42527/mcorderdatabase';
+    let orders_db_url = 'mongodb://mc:mc1234@ds157158.mlab.com:57158/mcordersdb';
     let mongo_db = process.env.MONGODB_URI || orders_db_url;
     //mongoose.connect(mongo_db);
     mongoose.Promise = global.Promise;
@@ -60,7 +60,7 @@
     app.use('/clients', client);
 
     let port = 1234;
-    app.listen(process.env.PORT || port, () => {
+    app.listen(port, () => {
         console.log('Server is up and running on port number ' + port);
     });
 

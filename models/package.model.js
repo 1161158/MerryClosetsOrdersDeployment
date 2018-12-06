@@ -1,14 +1,23 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-const Size = require('./size.model');
-const uniqueValidator = require('mongoose-unique-validator');
 
-let PackageSchema = Schema(
-    {
-        tag: { type: String, required: true, unique: true, index: true},
-        sizeRef: { type: String, required: true},
-    }
-);
+let PackageSchema =  Schema({
+    tag: { type: String},
+    sizeRef: { type: String, required: true},
+    weight: { type: Number, required: true}
+});
 
-PackageSchema.plugin(uniqueValidator);
+function create_package(order, size, weight, added){
+    return new Promise(async function (resolve) {
+        var tagConcat = 'o' + order.orderRef + 'p' +  added + 's' + size.sizeRef.substring(4,5);
+        let newPackage = {
+            tag: tagConcat,
+            sizeRef: size.sizeRef,
+            weight: weight
+        };
+        resolve(newPackage);
+    })
+}
+
 module.exports = PackageSchema;
+module.exports.create_package = create_package;

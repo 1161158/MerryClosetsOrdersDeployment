@@ -15,8 +15,15 @@ exports.submit_size = async function (request, response) {
         if (exists.type === 'no size') {
             let result = await service.create(request);
             if (result.boolean === false) {
-                logger.logError(loggerEvent.PostBadRequest.value, 'Creating Size Failed: JSON is not valid => ', result.res.message);
-                return response.status(400).send(Json.json_to_string(NOT_VALID, response));
+                if(result.type === 'error'){
+                    logger.logError(loggerEvent.PostBadRequest.value, 'Creating Size Failed: JSON is not valid => ', result.res.message);
+                    return response.status(400).send(Json.json_to_string(NOT_VALID, response));
+                }
+                if(result.type === 'weight invalid'){
+                    logger.logError(loggerEvent.PostBadRequest.value, 'Creating Size Failed: JSON is not valid => ', 'Minimum weight ' +
+                        'is bigger than maximum.');
+                    return response.status(400).send(Json.json_to_string(NOT_VALID, response));
+                }
             }
             logger.logInformation(loggerEvent.PostCreated.value, 'Creating Size Succeeded: ', request.body.sizeRef);
 
