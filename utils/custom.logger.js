@@ -28,21 +28,21 @@ var logger = createLogger({
     ]
 });
 
-function logInformation(logId, message, args){
+function logInformation(userRef, logId, message, args){
     logMessageFormated = util.format(message, args);
-    info = util.format('     EVENTID: %d     MESSAGE: %s', logId, logMessageFormated);
+    info = util.format('USERREF: %s     EVENTID: %d     MESSAGE: %s', userRef, logId, logMessageFormated);
     logger.info(info);
 }
 
-function logWarning(logId, message, args){
+function logWarning(userRef, logId, message, args){
     logMessageFormated = util.format(message, args);
-    info = util.format('     EVENTID: %d     MESSAGE: %s', logId, logMessageFormated);
+    info = util.format('USERREF: %s     EVENTID: %d     MESSAGE: %s', userRef, logId, logMessageFormated);
     logger.warn(info);
 }
 
-function logError(logId, message, args){
+function logError(userRef, logId, message, args){
     logMessageFormated = util.format(message, args);
-    info = util.format('     EVENTID: %d     MESSAGE: %s', logId, logMessageFormated);
+    info = util.format('USERREF: %s     EVENTID: %d     MESSAGE: %s', userRef, logId, logMessageFormated);
     logger.error(info);
 }
 

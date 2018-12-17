@@ -10,10 +10,13 @@
   "license": "ISC",
   "dependencies": {
     "array-length": "^0.1.2",
+    "assert": "^1.4.1",
     "async": "^2.6.1",
     "await": "^0.2.6",
+    "axios": "^0.18.0",
     "body-parser": "^1.18.3",
     "date-and-time": "^0.6.3",
+    "deep-equal": "^1.0.1",
     "enum": "^2.5.0",
     "enum-values": "^1.2.1",
     "express": "^4.16.4",
@@ -29,12 +32,14 @@
     "node-stringify": "^0.2.1",
     "request": "^2.88.0",
     "shortid": "^2.2.14",
+    "sinon": "^7.1.1",
     "winston": "^3.1.0"
   },
   "test-unit": "NODE_ENV=test mocha '/**/*.spec.js'",
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^5.2.0",
+    "nyc": "^13.1.0",
     "supertest": "^3.3.0"
   },
   "description": ""

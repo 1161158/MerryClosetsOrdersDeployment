@@ -11,30 +11,33 @@ function create(request){
                 depth: request.body.depth,
             }
         );
-        if(request.body.minWeight !== undefined){
-            size.minWeight = request.body.minWeight;
-            size.maxWeight = request.body.maxWeight;
-
-            if(size.minWeight > size.maxWeight){
+        let enter = true;
+        if (request.body.minWeight !== undefined) {
+            if (request.body.minWeight > request.body.maxWeight) {
+                enter = false;
                 resolve({
                     boolean: false,
                     type: 'weight invalid'
                 })
             }
+            size.minWeight = request.body.minWeight;
+            size.maxWeight = request.body.maxWeight;
         }
-        size.save(function (err) {
-            if (err) {
+        if(enter) {
+            size.save(function (err) {
+                if (err) {
+                    resolve({
+                        boolean: false,
+                        type: 'error',
+                        res: err
+                    });
+                }
                 resolve({
-                    boolean: false,
-                    type: 'error',
-                    res: err
+                    boolean: true,
+                    res: size
                 });
-            }
-            resolve({
-                boolean: true,
-                res: size
-            });
-        })
+            })
+        }
     })
 }
 
@@ -86,20 +89,21 @@ function update(request){
                 boolean: false,
                 type: 'ref'
             });
-        }
-        Size.findOneAndUpdate({'sizeRef': request.params.sizeRef}, {$set: request.body}, function (err, size) {
-            if (err) {
+        }else {
+            Size.findOneAndUpdate({'sizeRef': request.params.sizeRef}, {$set: request.body}, function (err, size) {
+                if (err) {
+                    resolve({
+                        boolean: false,
+                        type: 'error',
+                        res: err
+                    });
+                }
                 resolve({
-                    boolean: false,
-                    type: 'error',
-                    res: err
+                    boolean: true,
+                    res: size
                 });
-            }
-            resolve({
-                boolean: true,
-                res: size
             });
-        });
+        }
     })
 }
 

@@ -10,26 +10,42 @@ function create(request){
                 boolean: false,
                 type: exists.type
             });
-        }
-        let manufacture = new Manufacture({
-            factoryRef: request.body.factoryRef,
-            cityName: request.body.cityName,
-            name: request.body.name,
-            coordinates: request.body.coordinates,
-        });
-        manufacture.save(function (err) {
-            if (err) {
-                resolve({
-                    boolean: false,
-                    type: 'error',
-                    res: err
-                });
-            }
+        }else if(request.body.factoryRef === undefined) {
             resolve({
-                boolean: true,
-                res: manufacture
+                boolean: false,
+                type: 'not valid'
+            })
+        }else if (request.body.factoryRef.length === 0) {
+            resolve({
+                boolean: false,
+                type: 'not valid'
+            })
+        }else if(request.body.coordinates === undefined) {
+            resolve({
+                boolean: false,
+                type: 'not valid'
+            })
+        }else {
+            let manufacture = new Manufacture({
+                factoryRef: request.body.factoryRef,
+                cityName: request.body.cityName,
+                name: request.body.name,
+                coordinates: request.body.coordinates,
             });
-        })
+            manufacture.save(function (err) {
+                if (err) {
+                    resolve({
+                        boolean: false,
+                        type: 'error',
+                        res: err
+                    });
+                }
+                resolve({
+                    boolean: true,
+                    res: manufacture
+                });
+            })
+        }
     })
 }
 
@@ -76,7 +92,9 @@ function get_all(){
 
 function update(request){
     return new Promise(async function (resolve) {
+        let active = true;
         if(request.body.factoryRef !== undefined){
+            active = false;
             resolve({
                 boolean: false,
                 type: 'ref'
@@ -85,25 +103,28 @@ function update(request){
         if(request.body.cityName !== undefined){
             let exists = await city_service.get_city(request);
             if(exists.boolean === false){
+                active = false;
                 resolve({
                     boolean: false,
                     type: exists.type
                 });
             }
         }
-        Manufacture.findOneAndUpdate({'factoryRef': request.params.factoryRef}, {$set: request.body}, function (err, manufacture) {
-            if (err) {
+        if(active) {
+            Manufacture.findOneAndUpdate({'factoryRef': request.params.factoryRef}, {$set: request.body}, function (err, manufacture) {
+                if (err) {
+                    resolve({
+                        boolean: false,
+                        type: 'error',
+                        res: err
+                    });
+                }
                 resolve({
-                    boolean: false,
-                    type: 'error',
-                    res: err
+                    boolean: true,
+                    res: manufacture
                 });
-            }
-            resolve({
-                boolean: true,
-                res: manufacture
             });
-        });
+        }
     })
 }
 

@@ -5,7 +5,6 @@
     const factory = require('./routes/manufacture.route');
     const city = require('./routes/city.route');
     const size = require('./routes/size.route');
-    const client = require('./routes/client.route');
     const app = express();
 	
 	const httpClient = require('./utils/http.client');
@@ -57,9 +56,7 @@
     app.use('/manufactures', factory);
     app.use('/cities', city);
     app.use('/sizes', size);
-    app.use('/clients', client);
-
-    let port = process.env.PORT || 1234;
+    let port = 1234;
     app.listen(port, () => {
         console.log('Server is up and running on port number ' + port);
     });

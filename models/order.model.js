@@ -3,7 +3,6 @@ const Schema = mongoose.Schema;
 const Product = require('./productOrder.model');
 const State = require('./state.model');
 const Package = require('./package.model');
-const Object = Schema.Types.Object;
 
 let AddressSchema = Schema(
     {
@@ -19,7 +18,7 @@ let OrderSchema = Schema(
         total_cost: {type: Number, required: false},
         address: {type: AddressSchema, required: true},
         products: {type: [Product], required: true},
-        client: {type: Object, ref: 'Client'},
+        userRef: {type: String, required: true},
         orderState: {type: [State], required: false},
         manufactureRef: {type: String, required: false},
         packages: {type: [Package]}

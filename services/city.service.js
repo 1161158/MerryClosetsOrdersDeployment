@@ -3,24 +3,52 @@ const client = require('../utils/http.client');
 
 function create(request){
     return new Promise(async function(resolve) {
-        let city = new City(
-            {
-                cityName: request.body.cityName,
-                cityCoordinates: request.body.cityCoordinates
-            }
-        );
-        city.save(function (err) {
-            if (err) {
-                resolve({
-                    boolean: false,
-                    res: err
-                });
-            }
+        if(request.body.cityName === undefined) {
             resolve({
-                boolean: true,
-                res: city
-            });
-        })
+                boolean: false,
+                type: 'not valid'
+            })
+        }else if (request.body.cityName.length === 0) {
+            resolve({
+                boolean: false,
+                type: 'not valid'
+            })
+        }else if (request.body.cityCoordinates === undefined) {
+            resolve({
+                boolean: false,
+                type: 'not valid'
+            })
+        }else if (request.body.cityCoordinates.latitude === undefined) {
+            resolve({
+                boolean: false,
+                type: 'not valid'
+            })
+        }else if (request.body.cityCoordinates.longitude === undefined) {
+            resolve({
+                boolean: false,
+                type: 'not valid'
+            })
+        }else {
+            let city = new City(
+                {
+                    cityName: request.body.cityName,
+                    cityCoordinates: request.body.cityCoordinates
+                }
+            );
+            city.save(function (err) {
+                if (err) {
+                    resolve({
+                        boolean: false,
+                        type: 'error',
+                        res: err
+                    });
+                }
+                resolve({
+                    boolean: true,
+                    res: city
+                });
+            })
+        }
     })
 }
 
