@@ -1,4 +1,4 @@
-const logisticUrl = "http://localhost:5002/";
+const logisticUrl = "23.99.208.224";
 const request = require('request');
 const async = require('async');
 

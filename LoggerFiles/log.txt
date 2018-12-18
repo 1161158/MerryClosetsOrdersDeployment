@@ -8667,3 +8667,115 @@
 [16-December-2018 23:49:43.667 INFO]: USERREF: 1     EVENTID: 2001     MESSAGE: Getting City Succeeded Aveiro
 [16-December-2018 23:49:43.720 INFO]: USERREF: 1     EVENTID: 2006     MESSAGE: Deleting City Succeeded:  { 'cityCoordinates.latitude': 40.6405,
   'cityCoordinates.longitude': 8.6538 }
+[18-December-2018 00:56:50.860 INFO]: USERREF: 1     EVENTID: 1001     MESSAGE: Getting City By Coordinates:  41.12398.6118
+[18-December-2018 00:56:50.916 WARN]: USERREF: 1     EVENTID: 4041     MESSAGE: Getting City Failed: Coordinates of city => There are no City with the given coordinates
+[18-December-2018 00:56:51.291 INFO]: USERREF: 1     EVENTID: 1003     MESSAGE: Creating City By Json:  
+[18-December-2018 00:56:51.343 ERROR]: USERREF: 1     EVENTID: 4003     MESSAGE: Creating City Failed: JSON is not valid =>  
+[18-December-2018 00:56:51.676 INFO]: USERREF: 1     EVENTID: 1003     MESSAGE: Creating City By Json:  
+[18-December-2018 00:56:51.724 ERROR]: USERREF: 1     EVENTID: 4003     MESSAGE: Creating City Failed: JSON is not valid =>  
+[18-December-2018 00:56:52.064 INFO]: USERREF: 1     EVENTID: 1003     MESSAGE: Creating City By Json:  
+[18-December-2018 00:56:52.228 INFO]: USERREF: 1     EVENTID: 1003     MESSAGE: Creating City in Logistic:  Aveiro
+[18-December-2018 00:56:52.232 INFO]: USERREF: 1     EVENTID: 2011     MESSAGE: Creating City Succeeded:  Aveiro
+[18-December-2018 00:56:52.568 INFO]: USERREF: 1     EVENTID: 1003     MESSAGE: Creating City By Json:  
+[18-December-2018 00:56:52.663 ERROR]: USERREF: 1     EVENTID: 4003     MESSAGE: Creating City Failed: JSON is not valid =>  City validation failed: cityCoordinates: Error, expected `cityCoordinates` to be unique. Value: `[object Object]`
+[18-December-2018 00:56:53.019 INFO]: USERREF: 1     EVENTID: 1003     MESSAGE: Creating City By Json:  
+[18-December-2018 00:56:53.167 INFO]: USERREF: 1     EVENTID: 1003     MESSAGE: Creating City in Logistic:  Gaia
+[18-December-2018 00:56:53.167 INFO]: USERREF: 1     EVENTID: 2011     MESSAGE: Creating City Succeeded:  Gaia
+[18-December-2018 00:56:53.530 INFO]: USERREF: 1     EVENTID: 1003     MESSAGE: Creating City By Json:  
+[18-December-2018 00:56:53.626 ERROR]: USERREF: 1     EVENTID: 4003     MESSAGE: Creating City Failed: JSON is not valid =>  City validation failed: cityName: Error, expected `cityName` to be unique. Value: `Gaia`, cityCoordinates: Error, expected `cityCoordinates` to be unique. Value: `[object Object]`
+[18-December-2018 00:56:53.966 INFO]: USERREF: 1     EVENTID: 1003     MESSAGE: Creating City By Json:  
+[18-December-2018 00:56:54.014 ERROR]: USERREF: 1     EVENTID: 4003     MESSAGE: Creating City Failed: JSON is not valid =>  
+[18-December-2018 00:56:54.349 INFO]: USERREF: 1     EVENTID: 1001     MESSAGE: Getting City By Coordinates:  41.12398.6118
+[18-December-2018 00:56:54.397 INFO]: USERREF: 1     EVENTID: 2001     MESSAGE: Getting City Succeeded:  { _id: 5c1845d50e16a449586e5bce,
+  cityName: 'Gaia',
+  cityCoordinates: { latitude: 41.1239, longitude: 8.6118 },
+  __v: 0 }
+[18-December-2018 00:56:54.733 INFO]: USERREF: 1     EVENTID: 1001     MESSAGE: Getting manufacture By Reference:  testF1
+[18-December-2018 00:56:54.793 WARN]: USERREF: 1     EVENTID: 4041     MESSAGE: Getting manufacture Failed: Reference of manufacture => There are no Manufactures with the given reference
+[18-December-2018 00:56:55.152 INFO]: USERREF: 1     EVENTID: 1003     MESSAGE: Creating By Json:  testF1
+[18-December-2018 00:56:55.248 WARN]: USERREF: 1     EVENTID: 4041     MESSAGE: Getting City Failed: Name of city => There are no City with the given name
+[18-December-2018 00:56:55.600 INFO]: USERREF: 1     EVENTID: 1003     MESSAGE: Creating By Json:  testF2
+[18-December-2018 00:56:55.809 INFO]: USERREF: 1     EVENTID: 2011     MESSAGE: Creating manufacture Succeeded:  testF2
+[18-December-2018 00:56:56.153 INFO]: USERREF: 1     EVENTID: 1003     MESSAGE: Creating By Json:  testF1
+[18-December-2018 00:56:56.297 ERROR]: USERREF: 1     EVENTID: 4003     MESSAGE: Creating manufacture Failed: JSON is not valid =>  Manufactory validation failed: coordinates: Error, expected `coordinates` to be unique. Value: `[object Object]`
+[18-December-2018 00:56:56.640 INFO]: USERREF: 1     EVENTID: 1003     MESSAGE: Creating By Json:  
+[18-December-2018 00:56:56.736 ERROR]: USERREF: 1     EVENTID: 4003     MESSAGE: Creating Manufacture Failed: JSON is not valid =>  
+[18-December-2018 00:56:57.068 INFO]: USERREF: 1     EVENTID: 1003     MESSAGE: Creating By Json:  testF1
+[18-December-2018 00:56:57.263 INFO]: USERREF: 1     EVENTID: 2011     MESSAGE: Creating manufacture Succeeded:  testF1
+[18-December-2018 00:56:57.599 INFO]: USERREF: 1     EVENTID: 1001     MESSAGE: Getting manufacture By Reference:  testF1
+[18-December-2018 00:56:57.651 INFO]: USERREF: 1     EVENTID: 2001     MESSAGE: Getting manufacture Succeeded:  testF1
+[18-December-2018 00:56:57.994 INFO]: USERREF: 1001     EVENTID: NaN     MESSAGE: 0 undefined
+[18-December-2018 00:56:58.046 WARN]: USERREF: 1     EVENTID: 4041     MESSAGE: Getting Order Failed: Reference of order => There are no Orders with the given reference
+[18-December-2018 00:56:58.386 INFO]: USERREF: 1     EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[18-December-2018 00:56:59.060 ERROR]: USERREF: 1     EVENTID: 4043     MESSAGE: Creating Order Failed: JSON is not valid =>  Produtos especificados não existem.
+[18-December-2018 00:56:59.397 INFO]: USERREF: 1     EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[18-December-2018 00:56:59.397 ERROR]: USERREF: 1     EVENTID: 4043     MESSAGE: Creating Order Failed: JSON is not valid =>  Não foram especificados produtos.
+[18-December-2018 00:56:59.736 INFO]: USERREF: 1     EVENTID: 1003     MESSAGE: Creating Order By Json:  
+[18-December-2018 00:57:00.331 ERROR]: USERREF: 1     EVENTID: 4043     MESSAGE: Creating Order Failed: JSON is not valid =>  Produtos especificados não existem.
+[18-December-2018 00:57:00.672 INFO]: USERREF: 1     EVENTID: 1002     MESSAGE: Getting All Orders 
+[18-December-2018 00:57:01.289 INFO]: USERREF: 1     EVENTID: 2002     MESSAGE: Getting All Orders Succeeded:  [ { orderRef: '1',
+    orderState: { _id: 5c16b2b1559d80560892f729,
+       state: 'Pronta a Expedir',
+       date: '16/12/2018 20:16:49' },
+    packages: CoreMongooseArray [ [Object], [Object], [Object], [Object] ] },
+  { orderRef: '2',
+    orderState: { _id: 5c16c6ab4bdf7653701513a6,
+       state: 'Em Validação',
+       date: '16/12/2018 21:42:03' },
+    packages: CoreMongooseArray [] },
+  { orderRef: '3',
+    orderState: { _id: 5c16d8f24bdf7653701513bb,
+       state: 'Em Validação',
+       date: '16/12/2018 23:00:02' },
+    packages: CoreMongooseArray [] },
+  { orderRef: '4',
+    orderState: { _id: 5c16dfab4bdf7653701513f9,
+       state: 'Pronta a Expedir',
+       date: '16/12/2018 23:28:43' },
+    packages: CoreMongooseArray [ [Object], [Object], [Object], [Object] ] },
+  { orderRef: '5',
+    orderState: { _id: 5c16e15a4bdf765370151435,
+       state: 'Pronta a Expedir',
+       date: '16/12/2018 23:35:54' },
+    packages: CoreMongooseArray [ [Object], [Object], [Object], [Object] ] },
+  { orderRef: '6',
+    orderState: { _id: 5c16e1d84bdf765370151448,
+       state: 'Em Validação',
+       date: '16/12/2018 23:38:00' },
+    packages: CoreMongooseArray [] },
+  { orderRef: '7',
+    orderState: { _id: 5c16e3104bdf765370151481,
+       state: 'Pronta a Expedir',
+       date: '16/12/2018 23:43:12' },
+    packages: CoreMongooseArray [ [Object], [Object], [Object], [Object] ] },
+  { orderRef: '8',
+    orderState: { _id: 5c16e35e4bdf7653701514b6,
+       state: 'Pronta a Expedir',
+       date: '16/12/2018 23:44:30' },
+    packages: CoreMongooseArray [ [Object], [Object], [Object], [Object] ] },
+  { orderRef: '9',
+    orderState: { _id: 5c16e43d4bdf7653701514fe,
+       state: 'Pronta a Expedir',
+       date: '16/12/2018 23:48:13' },
+    packages: CoreMongooseArray [ [Object], [Object], [Object], [Object] ] },
+  { orderRef: '10',
+    orderState: { _id: 5c16e4914bdf765370151549,
+       state: 'Pronta a Expedir',
+       date: '16/12/2018 23:49:37' },
+    packages: CoreMongooseArray [ [Object], [Object], [Object], [Object] ] } ]
+[18-December-2018 00:57:01.653 INFO]: USERREF: 1     EVENTID: 1001     MESSAGE: Getting Size By Reference:  testSize1
+[18-December-2018 00:57:01.705 WARN]: USERREF: 1     EVENTID: 4041     MESSAGE: Getting Size Failed: Reference of size => There are no Sizes with the given reference
+[18-December-2018 00:57:02.040 INFO]: USERREF: 1     EVENTID: 1003     MESSAGE: Creating Size By Json:  
+[18-December-2018 00:57:02.092 ERROR]: USERREF: 1     EVENTID: 4003     MESSAGE: Creating Size Failed: JSON is not valid =>  Minimum weight is bigger than maximum.
+[18-December-2018 00:57:02.428 INFO]: USERREF: 1     EVENTID: 1003     MESSAGE: Creating Size By Json:  
+[18-December-2018 00:57:02.586 INFO]: USERREF: 1     EVENTID: 2011     MESSAGE: Creating Size Succeeded:  testSize1
+[18-December-2018 00:57:02.586 INFO]: USERREF: 1     EVENTID: 1003     MESSAGE: Creating PackageSize in Logistic:  testSize1
+[18-December-2018 00:57:02.586 INFO]: USERREF: 1     EVENTID: 2011     MESSAGE: Creating PackageSize Succeeded:  testSize1
+[18-December-2018 00:57:02.937 INFO]: USERREF: 1     EVENTID: 1003     MESSAGE: Creating Size By Json:  
+[18-December-2018 00:57:03.041 ERROR]: USERREF: 1     EVENTID: 4003     MESSAGE: Creating Size Failed: JSON is not valid =>  PackageSize validation failed: sizeRef: Error, expected `sizeRef` to be unique. Value: `testSize1`
+[18-December-2018 00:57:03.389 INFO]: USERREF: 1     EVENTID: 1003     MESSAGE: Creating Size By Json:  
+[18-December-2018 00:57:03.493 ERROR]: USERREF: 1     EVENTID: 4003     MESSAGE: Creating Size Failed: JSON is not valid =>  PackageSize validation failed: depth: Path `depth` is required.
+[18-December-2018 00:57:03.832 INFO]: USERREF: 1     EVENTID: 1003     MESSAGE: Creating Size By Json:  
+[18-December-2018 00:57:03.928 ERROR]: USERREF: 1     EVENTID: 4003     MESSAGE: Creating Size Failed: JSON is not valid =>  PackageSize validation failed: sizeRef: Path `sizeRef` is required.
+[18-December-2018 00:57:04.274 INFO]: USERREF: 1     EVENTID: 1001     MESSAGE: Getting Size By Reference:  testSize1
+[18-December-2018 00:57:04.326 INFO]: USERREF: 1     EVENTID: 2001     MESSAGE: Getting Size Succeeded:  testSize1
